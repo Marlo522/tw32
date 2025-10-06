@@ -1,0 +1,43 @@
+.action-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-right: 8px;
+    color: white;
+}
+.action-icon:last-child {
+    margin-right: 0;
+}
+.action-icon:hover {
+    opacity: 0.8;
+    color: white;
+}
+.action-view {
+    background-color: #28a745;
+}
+.action-edit {
+    background-color: #6c757d;
+}
+.action-delete {
+    background-color: #dc3545;
+}
+.btn-add-new {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    font-size: 14px;
+    min-height: 42px;
+}
+.btn-add-new .material-symbols-outlined {
+    font-size: 18px;
+}
+.btn .material-symbols-outlined {
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+}

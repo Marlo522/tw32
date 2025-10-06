@@ -1,0 +1,245 @@
+CRITICAL - 2025-09-27 03:41:12 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "addproduct_view.php"
+[Method: GET, Route: products/add]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('addproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('addproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(22): view('addproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 03:58:15 --> ErrorException: Undefined variable $product
+[Method: GET, Route: products/edit]
+in APPPATH\Views\editproducts_view.php on line 30.
+ 1 APPPATH\Views\editproducts_view.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 30)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(32): view('editproducts_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:08:41 --> ArgumentCountError: Too few arguments to function App\Controllers\Products::view(), 0 passed in C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php on line 933 and exactly 1 expected
+[Method: GET, Route: products/view]
+in APPPATH\Controllers\Products.php on line 36.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:09:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:09:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:16 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "viewproduct_view.php"
+[Method: GET, Route: products/view]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('viewproduct_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproduct_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproduct_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:29 --> ErrorException: Undefined variable $product
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 28.
+ 1 APPPATH\Views\viewproducts_view.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php', 28)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:10:55 --> ErrorException: Undefined variable $product
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 37.
+ 1 APPPATH\Views\viewproducts_view.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php', 37)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:11:14 --> ParseError: syntax error, unexpected token "else", expecting end of file
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 37.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:11:15 --> ParseError: syntax error, unexpected token "else", expecting end of file
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 37.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:11:15 --> ParseError: syntax error, unexpected token "else", expecting end of file
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 37.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:11:24 --> ParseError: syntax error, unexpected token "endif", expecting end of file
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 40.
+ 1 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 3 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-27 04:11:28 --> ErrorException: Undefined variable $product
+[Method: GET, Route: products/view]
+in APPPATH\Views\viewproducts_view.php on line 43.
+ 1 APPPATH\Views\viewproducts_view.php(43): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php', 43)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\viewproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('viewproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(42): view('viewproducts_view')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->view()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
