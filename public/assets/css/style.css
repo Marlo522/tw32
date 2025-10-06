@@ -41,3 +41,89 @@
     display: inline-flex;
     align-items: center;
 }
+
+/* Navbar Styles */
+.navbar.navbar-custom {
+    background-color: #000000 !important;
+}
+
+/* Center the navigation links */
+.navbar-custom .navbar-nav {
+    margin: 0 auto !important;
+}
+
+.navbar-custom .container-fluid {
+    justify-content: center !important;
+}
+
+/* Navbar Link Hover Effects */
+.navbar-custom .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    padding: 8px 16px !important;
+    margin: 0 4px;
+}
+
+.navbar-custom .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: #ffffff !important;
+    transform: translateY(-1px);
+}
+
+.navbar-custom .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #A6B28B !important;
+    transition: color 0.3s ease;
+}
+
+/* Body Background */
+body {
+    background-color: #000000 !important;
+}
+
+.bg-custom {
+    background-color: #000000!important;
+}
+.sisig-image {
+    max-width: 100%;
+    height: auto;
+    object-fit: none;
+}
+ @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+    
+    .btn:hover .bg-light,
+    .btn:hover .bg-warning {
+        opacity: 0.1 !important;
+    }
+    
+    .btn-warning:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4) !important;
+    }
+    
+    .btn-outline-light:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2) !important;
+        border-color: #ffc107 !important;
+        color: #ffc107 !important;
+    }
+    
+    @media (max-width: 991.98px) {
+        .display-1 { font-size: 3rem; }
+        .display-3 { font-size: 2rem; }
+        .col-lg-6 { min-height: 50vh; }
+    }

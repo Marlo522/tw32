@@ -1,5 +1,5 @@
 <header class="text-center">
-    <h1>Products</h1>
+    <h1 class="text-white">Products</h1>
 </header>
 <main>
     <div class="col col-md-8 mx-auto">
