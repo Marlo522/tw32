@@ -26,3 +26,5 @@ $routes->get('products/delete/(:num)', 'Products::delete/$1');
 $routes->get('users/add', 'Users::add');
 $routes->post('users/insert', 'Users::insert');
 $routes->get('users/view/(:num)', 'Users::view/$1');
+$routes->get('users/edit/(:num)', 'Users::edit/$1');
+$routes->post('users/update/(:num)', 'Users::update/$1');

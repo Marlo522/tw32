@@ -52,15 +52,10 @@
                                                 <a href="<?= base_url('users/view/' . $user['id']); ?>" class="action-icon action-view me-2" title="View User">
                                                     <i class="fas fa-eye"></i>
                                                 </a>
-                                                <a href="#" 
-                                                   class="action-icon action-edit me-2" 
-                                                   title="Edit User">
+                                                <a href="<?= base_url('users/edit/' . $user['id']); ?>" class="action-icon action-edit me-2" title="Edit User">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
-                                                <a href="#" 
-                                                   class="action-icon action-delete" 
-                                                   title="Delete User"
-                                                   onclick="return confirm('Are you sure you want to delete this user?')">
+                                                <a href="#" class="action-icon action-delete" title="Delete User">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
                                             </div>

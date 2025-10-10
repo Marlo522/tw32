@@ -50,4 +50,33 @@ class Users extends BaseController {
             .view('viewuser_view', $data)
             .view('include\foot_view');
     }
+
+    public function edit($id){
+        $usermodel = model('Users_model');
+        $data = array(
+            'title' => 'Edit User',
+            'user' => $usermodel->find($id)
+        );
+        return view('include\head_view', $data)
+            .view('include\nav_view')
+            .view('edituser_view', $data)
+            .view('include\foot_view');
+    }
+
+    public function update($id){    
+        $usermodel = model('Users_model');
+        
+        $data = array(
+            'username' => $this->request->getPost('username'),
+            'password' => $this->request->getPost('password'),
+            'fullname' => $this->request->getPost('fullname'),
+            'email' => $this->request->getPost('email'),
+        );
+
+        $usermodel->update($id, $data);
+
+        return redirect()->to('users');
+    }
+
+
 }
