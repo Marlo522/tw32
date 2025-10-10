@@ -25,3 +25,4 @@ $routes->get('products/delete/(:num)', 'Products::delete/$1');
 //user
 $routes->get('users/add', 'Users::add');
 $routes->post('users/insert', 'Users::insert');
+$routes->get('users/view/(:num)', 'Users::view/$1');

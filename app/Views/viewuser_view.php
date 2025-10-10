@@ -13,20 +13,20 @@
                         <label class="form-label small fw-semibold d-flex align-items-center gap-1 text-light">
                             <span class="material-symbols-outlined form-label-icon">account_circle</span>Username
                         </label>
-                        <input type="text" name="username" id="username" class="form-control bg-dark text-white border-secondary" placeholder="Enter username" required>
+                        <input type="text" name="username" id="username" class="form-control bg-dark text-white border-secondary" readonly value="<?= esc($user['username']); ?>">
                     </div>
                     <div class="col-md-6">
                         <label class="form-label small fw-semibold d-flex align-items-center gap-1 text-light">
                             <span class="material-symbols-outlined form-label-icon">person</span>Full Name
                         </label>
-                        <input type="text" name="fullname" id="fullname" class="form-control bg-dark text-white border-secondary" placeholder="Enter full name" required>
+                        <input type="text" name="fullname" id="fullname" class="form-control bg-dark text-white border-secondary" readonly value="<?= esc($user['fullname']); ?>">
                     </div>
 
                     <div class="col-md-6">
                         <label class="form-label small fw-semibold d-flex align-items-center gap-1 text-light">
                             <span class="material-symbols-outlined form-label-icon">email</span>Email
                         </label>
-                        <input type="email" name="email" id="email" class="form-control bg-dark text-white border-secondary" placeholder="Enter email address" required>
+                        <input type="email" name="email" id="email" class="form-control bg-dark text-white border-secondary" readonly value="<?= esc($user['email']); ?>">
                     </div>
                 </div>
 
@@ -34,9 +34,6 @@
                     <a href="<?= base_url('users'); ?>" class="btn btn-outline-light d-flex align-items-center gap-1">
                         <span class="material-symbols-outlined back-btn-icon">arrow_back</span>Back
                     </a>
-                    <button type="submit" class="btn btn-warning d-flex align-items-center gap-1">
-                        <span class="material-symbols-outlined">save</span>Save User
-                    </button>
                 </div>
             </form>
         </div>

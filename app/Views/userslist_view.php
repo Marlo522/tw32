@@ -49,9 +49,7 @@
                                         </td>
                                         <td class="py-3 text-center">
                                             <div class="action-buttons">
-                                                <a href="#" 
-                                                   class="action-icon action-view me-2" 
-                                                   title="View User">
+                                                <a href="<?= base_url('users/view/' . $user['id']); ?>" class="action-icon action-view me-2" title="View User">
                                                     <i class="fas fa-eye"></i>
                                                 </a>
                                                 <a href="#" 

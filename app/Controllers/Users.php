@@ -37,5 +37,17 @@ class Users extends BaseController {
         $usermodel->insert($data);
 
         return redirect()->to('users');
-}
+    }
+
+    public function view($id){
+        $usermodel = model('Users_model');
+        $data = array(
+            'title' => 'View User',
+            'user' => $usermodel->find($id)
+        );
+        return view('include\head_view', $data)
+            .view('include\nav_view')
+            .view('viewuser_view', $data)
+            .view('include\foot_view');
+    }
 }
