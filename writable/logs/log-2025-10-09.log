@@ -1,0 +1,189 @@
+ERROR - 2025-10-09 15:18:33 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tw32', 3306, '', 0)
+#1 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projects\tw32\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\tw32\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\tw32\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\tw32\app\Controllers\Users.php(9): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(933): App\Controllers\Users->index()
+#8 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#9 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projects\tw32\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\projects\tw32\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\projects\tw32\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\tw32\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\projects\tw32\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\projects\tw32\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\projects\tw32\app\Controllers\Users.php(9): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(933): App\Controllers\Users->index()
+#7 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#8 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\tw32\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\projects\tw32\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\projects\tw32\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-10-09 15:18:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: users]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblusers`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Users.php(9): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-10-09 15:18:45 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'tw32', 3306, '', 0)
+#1 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\projects\tw32\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\tw32\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\tw32\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\tw32\app\Controllers\Products.php(9): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(933): App\Controllers\Products->index()
+#8 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#9 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\projects\tw32\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\projects\tw32\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\projects\tw32\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp\htdocs\projects\tw32\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\projects\tw32\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\projects\tw32\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\projects\tw32\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\projects\tw32\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp\htdocs\projects\tw32\app\Controllers\Products.php(9): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(933): App\Controllers\Products->index()
+#7 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#8 C:\xampp\htdocs\projects\tw32\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\projects\tw32\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\projects\tw32\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\projects\tw32\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-10-09 15:18:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: products]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tblproducts`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\Products.php(9): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:40:34 --> ErrorException: Undefined array key "description"
+[Method: GET, Route: products/edit/2]
+in APPPATH\Views\editproducts_view.php on line 27.
+ 1 APPPATH\Views\editproducts_view.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "description"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 27)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:48:30 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: products/edit/5]
+in APPPATH\Views\editproducts_view.php on line 7.
+ 1 APPPATH\Views\editproducts_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:48:32 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: products/edit/5]
+in APPPATH\Views\editproducts_view.php on line 7.
+ 1 APPPATH\Views\editproducts_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:48:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: products/edit/5]
+in APPPATH\Views\editproducts_view.php on line 7.
+ 1 APPPATH\Views\editproducts_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:48:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: products/edit/5]
+in APPPATH\Views\editproducts_view.php on line 7.
+ 1 APPPATH\Views\editproducts_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:48:33 --> ErrorException: Undefined array key "id"
+[Method: GET, Route: products/edit/5]
+in APPPATH\Views\editproducts_view.php on line 7.
+ 1 APPPATH\Views\editproducts_view.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php', 7)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp\\htdocs\\projects\\tw32\\app\\Views\\editproducts_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('editproducts_view', [], true)
+ 5 APPPATH\Controllers\Products.php(59): view('editproducts_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-10-09 15:49:11 --> Error: Call to a member function getName() on null
+[Method: POST, Route: products/update/5]
+in APPPATH\Controllers\Products.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products->update('5')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

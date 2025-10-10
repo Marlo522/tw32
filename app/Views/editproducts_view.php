@@ -4,31 +4,33 @@
         Edit Product
     </h3>
 
-    <form action="#" method="post" class="border rounded p-3">
-        <input type="hidden" name="id" value="">
+    <form action="<?= base_url('products/update/' . $product['productid']); ?>" method="post" enctype="multipart/form-data" class="border rounded p-3">
 
         <div class="mb-3">
-            <label class="form-label">Name</label>
-            <input name="name" class="form-control" value="" required>
+            <label class="form-label">ProductName</label>
+            <input name="productname" id="productname" class="form-control" value="<?= esc($product['productname']); ?>">
         </div>
 
         <div class="row g-3">
             <div class="col-md-4">
                 <label class="form-label">Price</label>
-                <input type="number" step="0.01" name="price" class="form-control" value="" required>
+                <input type="number" name="price" id="price" step="0.01" class="form-control" value="<?= esc($product['price']); ?>">
             </div>
             <div class="col-md-8">
                 <label class="form-label">Image</label>
-                <input type="file" name="image" class="form-control">
+                <input type="file"  name="productimage" id="productimage" class="form-control">
+                <?php if(!empty($product['productimage'])): ?>
+                    <small class="text-muted">Current image: <?= esc($product['productimage']); ?></small>
+                <?php endif; ?>
             </div>
         </div>
         <div class="mb-3">
             <label class="form-label">Description</label>
-            <textarea name="description" rows="4" class="form-control"></textarea>
+            <textarea name="productdescription" id="productdescription" rows="4" class="form-control"><?= esc($product['productdescription']); ?></textarea>
         </div>
 
         <div class="d-flex justify-content-end gap-2">
-            <a href="<?= site_url('products'); ?>" class="btn btn-outline-secondary">Cancel</a>
+            <a href="<?= base_url('products'); ?>" class="btn btn-outline-secondary">Cancel</a>
             <button type="submit" class="btn btn-primary">Update</button>
         </div>
     </form>

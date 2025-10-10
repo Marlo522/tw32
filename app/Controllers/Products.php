@@ -28,7 +28,6 @@ class Products extends BaseController {
     public function insert(){
         $productmodel = model('Products_models');
         
-        // Handle file upload
         $imageName = '';
         $file = $this->request->getFile('productimage');
         
@@ -46,16 +45,18 @@ class Products extends BaseController {
 
         $productmodel->insert($data);
 
-        return $this->response->redirect(site_url('/products'));
+        return redirect()->to('products');
     }
 
-    public function edit() {
+    public function edit($productid) {
+        $productmodel = model('Products_models');
         $data = array(
             'title' => 'Edit Product',
+            'product' => $productmodel->find($productid)
         );
         return view('include\head_view', $data)
             .view('include\nav_view')
-            .view('editproducts_view')
+            .view('editproducts_view', $data)
             .view('include\foot_view');
     }
 
@@ -70,6 +71,33 @@ class Products extends BaseController {
             .view('viewproducts_view', $data)
             .view('include\foot_view');
     }
+
+    public function update($productid) {
+    $productmodel = model('Products_models');
+    
+    // Get the existing product data first
+    $existingProduct = $productmodel->find($productid);
+    
+    $imageName = $existingProduct['productimage']; // Keep existing image by default
+    $file = $this->request->getFile('productimage');
+    
+    // Only update image if a new file is uploaded
+    if ($file && $file->isValid() && !$file->hasMoved()) {
+        $imageName = $file->getRandomName();
+        $file->move('uploads/', $imageName);
+    }
+    
+    $data = array(
+        'productimage' => $imageName,
+        'productname' => $this->request->getPost('productname'),
+        'productdescription' => $this->request->getPost('productdescription'),
+        'price' => $this->request->getPost('price'),
+    );
+
+    $productmodel->update($productid, $data);
+
+    return redirect()->to('products');
+}
 
     public function delete($productid) {
         $productmodel = model('Products_models');

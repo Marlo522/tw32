@@ -12,10 +12,16 @@ $routes->get('/', 'Index::index');
 // Routes for Users controller
 $routes->get('users', 'Users::index');
 
-// Routes for Products controller
+//products
 $routes->get('products', 'Products::index');
 $routes->get('products/add', 'Products::add');
-$routes->get('products/edit', 'Products::edit');
 $routes->get('products/view/(:num)', 'Products::view/$1');
 $routes->post('products/insert', 'Products::insert');
+$routes->get('products/edit/(:num)', 'Products::edit/$1');
+$routes->post('products/update/(:num)', 'Products::update/$1');
 $routes->get('products/delete/(:num)', 'Products::delete/$1');
+
+
+//user
+$routes->get('users/add', 'Users::add');
+$routes->post('users/insert', 'Users::insert');
