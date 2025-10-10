@@ -75,13 +75,11 @@ class Products extends BaseController {
     public function update($productid) {
     $productmodel = model('Products_models');
     
-    // Get the existing product data first
     $existingProduct = $productmodel->find($productid);
     
-    $imageName = $existingProduct['productimage']; // Keep existing image by default
+    $imageName = $existingProduct['productimage'];
     $file = $this->request->getFile('productimage');
     
-    // Only update image if a new file is uploaded
     if ($file && $file->isValid() && !$file->hasMoved()) {
         $imageName = $file->getRandomName();
         $file->move('uploads/', $imageName);
