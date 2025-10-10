@@ -1,4 +1,4 @@
-<main class="container py-4 ">
+<main class="container py-4 mb-5">
     <h3 class="mb-3 d-flex align-items-center gap-2 text-light">
         <span class="material-symbols-outlined" style="font-size:28px;color:#0d6efd;">edit</span>
         Edit Product

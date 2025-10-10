@@ -1,4 +1,4 @@
-<main class="container py-4">
+<main class="container py-4 mb-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0 d-flex align-items-center gap-2 text-light">
             <span class="material-symbols-outlined add-product-header-icon">add_box</span>Add Product
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end gap-2 mt-4">
-                    <a href="<?= base_url('products'); ?>" class="btn btn-outline-secondary d-flex align-items-center gap-1">
+                    <a href="<?= base_url('products'); ?>" class="btn btn-outline-secondary d-flex align-items-center gap-1 text-light">
                         <span class="material-symbols-outlined back-btn-icon">arrow_back</span>Back
                         
                     </a>

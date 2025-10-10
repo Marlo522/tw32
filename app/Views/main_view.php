@@ -23,13 +23,13 @@
                 <div class="d-flex gap-3 justify-content-center flex-wrap">
                     <a href="<?= base_url('products'); ?>" class="btn btn-warning btn-lg px-5 py-3 rounded-pill fw-semibold shadow-lg position-relative overflow-hidden btn-menu">
                         <span class="position-relative z-2">
-                            <i class="fas fa-utensils me-2"></i>Tingnan ang Menu
+                            <i class="fas fa-utensils me-2"></i>Check Products
                         </span>
                         <div class="position-absolute top-0 start-0 w-100 h-100 bg-light opacity-0 btn-overlay"></div>
                     </a>
                     <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3 rounded-pill fw-semibold shadow-lg position-relative overflow-hidden btn-contact">
                         <span class="position-relative z-2">
-                            <i class="fas fa-phone me-2"></i>Tumawag
+                            <i class="fas fa-phone me-2"></i>Call
                         </span>
                         <div class="position-absolute top-0 start-0 w-100 h-100 bg-warning opacity-0 btn-overlay"></div>
                     </a>

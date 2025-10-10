@@ -1,4 +1,4 @@
-<main class="container py-4">
+<main class="container py-4 mb-5">
     <div class="d-flex justify-content-between align-items-center mb-4">
         <h2 class="mb-0 d-flex align-items-center gap-2 text-light">
             <span class="material-symbols-outlined" style="font-size:32px;color:#0d6efd;">visibility</span>View Product
