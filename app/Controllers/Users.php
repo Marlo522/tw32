@@ -68,13 +68,19 @@ class Users extends BaseController {
         
         $data = array(
             'username' => $this->request->getPost('username'),
-            'password' => $this->request->getPost('password'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_BCRYPT),
             'fullname' => $this->request->getPost('fullname'),
             'email' => $this->request->getPost('email'),
         );
 
         $usermodel->update($id, $data);
 
+        return redirect()->to('users');
+    }
+
+    public function delete($id){
+        $usermodel = model('Users_model');
+        $usermodel->delete($id);
         return redirect()->to('users');
     }
 

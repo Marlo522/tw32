@@ -2,7 +2,6 @@
     <header class="hero-section text-center py-5 mb-5">
         <div class="container">
             <h1 class="display-4 text-white fw-bold mb-3">Our Products</h1>
-            <p class="lead text-white-50">Discover our amazing collection</p>
         </div>
     </header>
 
@@ -18,12 +17,6 @@
                 </div>
 
                 <div class="card shadow-lg border-0">
-                    <div class="card-header bg-gradient-primary text-white py-3">
-                        <h5 class="card-title mb-0">
-                            <i class="fas fa-boxes me-2"></i>
-                            Products Catalog
-                        </h5>
-                    </div>
                     <div class="card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-hover mb-0">
@@ -59,7 +52,7 @@
                                             <p class="product-description text-muted mb-0"><?= esc($product['productdescription']); ?></p>
                                         </td>
                                         <td class="py-3">
-                                            <span class="price-tag badge bg-success fs-6 px-3 py-2">$<?= esc($product['price']); ?></span>
+                                            <span class="fs-6 px-3 py-2"><?= esc($product['price']); ?></span>
                                         </td>
                                         <td class="py-3 text-center">
                                             <div class="action-buttons">
@@ -73,10 +66,14 @@
                                                    title="Edit Product">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
-                                                <a href="<?= base_url('products/delete/' . $product['productid']); ?>" 
+                                                <a href="#" 
                                                    class="action-icon action-delete" 
                                                    title="Delete Product"
-                                                   onclick="return confirm('Are you sure you want to delete this product?')">
+                                                   data-bs-toggle="modal" 
+                                                   data-bs-target="#deleteModal" 
+                                                   data-item-id="<?= $product['productid']; ?>" 
+                                                   data-item-name="<?= esc($product['productname']); ?>"
+                                                   data-delete-type="product">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
                                             </div>
@@ -91,4 +88,31 @@
             </div>
         </div>
     </main>
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-danger" id="deleteModalLabel">
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        Confirm Deletion
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <h6 class="mb-3">Are you sure you want to delete this <span id="deleteItemType">item</span>?</h6>
+                    <p class="text-muted mb-0">
+                        <span id="deleteItemTypeLabel">Item</span>: <strong id="itemNameToDelete"></strong>
+                    </p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <button type="button" class="btn btn-secondary px-4" data-bs-dismiss="modal">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </button>
+                    <a href="#" id="confirmDeleteBtn" class="btn btn-danger px-4">
+                        <i class="fas fa-trash me-2"></i>Delete
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

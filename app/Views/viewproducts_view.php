@@ -33,8 +33,8 @@
                                 <span class="material-symbols-outlined text-light" style="font-size:18px;">payments</span>Price
                             </label>
                             <div class="input-group">
-                                <span class="input-group-text text-light">$</span>
-                                <input type="number" step="0.01" name="price" id="price" class="form-control form-control-lg text-light" readonly value="<?= $product['price']; ?>">
+                                <span class="input-group-text text-muted">Php</span>
+                                <input type="number" step="0.01" name="price" id="price" class="form-control form-control-lg" readonly value="<?= $product['price']; ?>">
                             </div>
                         </div>
 
@@ -42,7 +42,7 @@
                             <label class="form-label small fw-semibold d-flex align-items-center gap-1 text-light">
                                 <span class="material-symbols-outlined text-light" style="font-size:18px;">description</span>Description
                             </label>
-                            <textarea name="productdescription" id="productdescription" rows="6" class="form-control text-light" readonly><?= $product['productdescription']; ?></textarea>
+                            <textarea name="productdescription" id="productdescription" rows="6" class="form-control" readonly><?= $product['productdescription']; ?></textarea>
                         </div>
                     </div>
                 </div>
@@ -51,8 +51,8 @@
             <hr class="my-4">
             
             <div class="d-flex justify-content-end gap-2">
-                <a href="<?= base_url('products'); ?>" class="btn btn-outline-secondary d-flex align-items-center gap-1">
-                    <span class="material-symbols-outlined" style="font-size:18px;">arrow_back</span>Back
+                <a href="<?= base_url('products'); ?>" class="btn btn-outline-secondary d-flex align-items-center gap-1 text-light">
+                    <span class="material-symbols-outlined">arrow_back</span>Back
                 </a>
             </div>
         </div>

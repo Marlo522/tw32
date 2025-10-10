@@ -244,6 +244,7 @@ body {
     transition: all 0.3s ease;
     background-color: #1a1a1a;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
 }
 
 .product-row:hover {
@@ -253,8 +254,11 @@ body {
 }
 
 .product-name {
-    color: #ffffff;
-    font-size: 1.1rem;
+    color: #000 !important;
+}
+
+.product-row .product-name {
+    color: #000 !important;
 }
 
 .product-description {
@@ -450,8 +454,6 @@ body {
 .simple-user-form .btn .material-symbols-outlined {
     font-size: 18px;
 }
-
-/* Dark theme form controls for user forms */
 .simple-user-form .form-control:focus {
     background-color: #2d2d2d;
     border-color: #6c757d;
@@ -463,7 +465,6 @@ body {
     color: #adb5bd;
 }
 
-/* Users container styling */
 .users-container {
     min-height: 100vh;
     background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);

@@ -7,7 +7,7 @@
 
     <div class="card shadow-sm border-0 bg-dark">
         <div class="card-body p-4">
-            <form action="<?= base_url('users/insert'); ?>" method="post" id="editUserForm" class="simple-user-form">
+            <form action="<?= base_url('users/update/'.$user['id']); ?>" method="post" id="editUserForm" class="simple-user-form">
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label class="form-label small fw-semibold d-flex align-items-center gap-1 text-light">
